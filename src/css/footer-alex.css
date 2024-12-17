@@ -1,6 +1,6 @@
 .footer {
   background-color: #7a3145;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 .footer-logo-contacts-wrapper {
@@ -85,7 +85,7 @@ p.footer-logo-text {
 
   .footer {
     background-color: #7a3145;
-    padding: 32px 0;
+    padding: 32px 32px;
   }
 
   .footer-logo-link {
