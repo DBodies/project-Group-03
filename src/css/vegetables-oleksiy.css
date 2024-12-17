@@ -48,8 +48,8 @@
 .vegetables-item {
     border-radius: 40px;
     padding: 32px 24px;
-    width: 287px;
-    height: 312px;
+    width: 335px;
+    height: 376px;
     background: #fbfbfb;
 }
 
@@ -121,8 +121,8 @@
     }
 
     .vegetables-item {
-        width: 280px;
-        height: 316px;
+        width: 340px;
+        height: 380px;
         padding: 32px 30px;
     }
 }
@@ -138,14 +138,13 @@
     }
 
     .vegetables-list {
-        gap: 24px;
+        gap: 28px 24px;
         width: 1080px;
     }
 
     .vegetables-item {
         padding: 32px;
-        width: 280px;
-        height: 316px;
+        width: 344px;
     }
 
     .vegetables-wrapper {
