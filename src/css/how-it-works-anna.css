@@ -5,7 +5,7 @@ ol {
 
 /* How it works Section */
 
-/* for mobile */
+/* for Mobile */
 .how-it-works-section {
   margin: 0;
   padding: 0;
@@ -174,7 +174,7 @@ ol {
   justify-content: center;
   color: #fbfbfb;
 }
-/* for tablet */
+/* for Tablet */
 
 @media only screen and (min-width: 768px) {
   .how-it-works-section {
@@ -219,7 +219,7 @@ ol {
   }
 }
 
-/* for desktop */
+/* for Desktop */
 @media only screen and (min-width: 1280px) {
   .how-it-works-section {
     background: linear-gradient(
