@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/project-Group-03/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-Group-03/assets/styles-86GRJHPi.css">
+    <link rel="stylesheet" crossorigin href="/project-Group-03/assets/styles-BveUWaGK.css">
   </head>
   <body>
     <header class="header">
@@ -44,7 +44,7 @@
         </ul>
         <button class="header-btn" type="button">Shop now</button>
       </nav>
-      <button class="open-menu" type="button" open-menu>
+      <button class="open-menu" type="button" data-open-menu>
         <svg class="header-svg-menu" width="32" height="32">
           <use href="/project-Group-03/assets/sprite-BZhS0XJj.svg#icon-header-mob-menu"></use>
         </svg>
@@ -71,9 +71,9 @@
   </div>
 </section>
 
-      <div class="mobile-menu is-open" menu>
+      <div class="mobile-menu" data-menu>
   <div class="container mobile-menu-container">
-    <button class="mobile-menu-close" type="button" menu-close>
+    <button class="mobile-menu-close" type="button" data-menu-close>
       <svg class="icon-close" width="32" height="32">
         <use href="/project-Group-03/assets/sprite-BZhS0XJj.svg#icon-close"></use>
       </svg>
@@ -105,14 +105,14 @@
         <div class="img-container">
             <picture>
                 <!-- for desktop-->
-                <source media=" (min-width: 1280px)" srcset="/project-Group-03/assets/cooking_woman-DgBw2RR2.jpg 1x, /project-Group-03/assets/cooking_woman-DgBw2RR2.jpg 2x" />
+                <source media=" (min-width: 1280px)" srcset="/project-Group-03/assets/cooking_woman-DgBw2RR2.jpg 1x, /project-Group-03/assets/cooking_woman@2%D1%85-BpId-GZJ.jpg 2x" />
 
                 <!-- for tablet-->
                 <source media="(min-width: 768px)" srcset="/project-Group-03/assets/howitworks_tab@1x-CFa1N954.jpg 1x, /project-Group-03/assets/howitworks_tab@2x-CNDst5lp.jpg 2x"
                     width="640" height="640" />
 
                 <!--for mobile-->
-                <source media="(min-width: 375px)" srcset="/project-Group-03/assets/howitworks_mob@1x-Dg0hSxg_.jpg 1x, /project-Group-03/assets/howitworks_mob@2x-BB49fNtO.jpg 2x"
+                <source media="(max-width: 767px)" srcset="/project-Group-03/assets/howitworks_mob@1x-Dg0hSxg_.jpg 1x, /project-Group-03/assets/howitworks_mob@2x-BB49fNtO.jpg 2x"
                     width="335" height="452" />
 
                 <img class="cooking-woman-image" src="/project-Group-03/assets/cooking_woman-DgBw2RR2.jpg"
@@ -120,11 +120,11 @@
             </picture>
         </div>
         <div class="text-container">
-            <h3 class="text-title">
+            <p class="text-title">
                 To order your <span class="highlight">vegetable</span> basket, simply follow these <span
                     class="highlight">easy
                     steps</span>
-            </h3>
+            </p>
             <p class="steps-text">Our baskets are assembled with care and delivered straight to your doorstep,
                 so
                 you can
@@ -271,7 +271,7 @@
       Words of our customers: impressions and opinions about the quality of our
       services and the freshness of our products.
     </p>
-    <div class="reviews-1">
+    
       <ul class="reviews_list">
         <li class="reviews_item">
           <picture>
@@ -341,7 +341,6 @@
           </p>
         </li>
       </ul>
-    </div>
   </div>
 </section>
 
@@ -364,29 +363,28 @@
           below and we will contact you !
         </p>
         <form class="order-send">
-          <label class="order-label" for="user-name"
+          <label class="order-label"
             ><input
+             required
               class="order-input"
               type="text"
               name="user-name"
-              id="user-name"
               placeholder="Full Name"
-          /></label>
-          <label class="order-label" for="mail"
+          /><span class="visually-hidden">user-name</span></label>
+          <label class="order-label" 
             ><input
               class="order-input input-valid"
               type="email"
               pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
               name="mail"
-              id="mail"
+            
               required
               placeholder="Email"
-          /></label>
-          <label class="order-label" for="user-comment">
+          /><span class="visually-hidden">user-Email</span></label>
+          <label class="order-label"><span class="visually-hidden">user-comment</span>
             <textarea
               class="order-massage"
               name="user-comment"
-              id="user-comment"
               placeholder="Comment"
             ></textarea>
           </label>
@@ -425,7 +423,7 @@
               >instagram
             </a>
           </li>
-          <li class="social-item">/</li>
+          <!-- <li class="social-item"></li> -->
           <li class="social-item">
             <a
               href="https://www.facebook.com/goITclub/ "
@@ -434,7 +432,7 @@
               >facebook
             </a>
           </li>
-          <li class="social-item">/</li>
+          <!-- <li class="social-item">/</li> -->
           <li class="social-item">
             <a
               href="https://www.youtube.com/c/GoIT "
@@ -488,18 +486,23 @@
               </a>
             </li>
             <li class="footer-contacts-item">
-              1678 S. Pioneer Road Salt Lake City UT 84104
+              <a class="link-google-maps" target="_blank"
+                href="https://www.google.com/maps/place/1678+S+Pioneer+St,+Salt+Lake+City,+UT+84109,+%D0%A1%D0%A8%D0%90/data=!4m2!3m1!1s0x875261afff24948f:0x6eeea2af766d70e8?sa=X&ved=1t:242&ictx=111"
+              >
+                1678 S. Pioneer Road Salt Lake City UT 84104</a
+              >
             </li>
           </ul>
         </address>
       </div>
     </div>
     <div class="footer-policy">
-      <ul class="footer-policy-list">
-        <li><a class="footer-policy-link" href="#">Privacy Policy</a></li>
-        <li class="footer-policy-item">/</li>
-        <li><a class="footer-policy-link" href="#">Cookie settings</a></li>
-      </ul>
+      <nav>
+        <ul class="footer-policy-list">
+          <li><a class="footer-policy-link" href="#">Privacy Policy</a></li>
+          <li><a class="footer-policy-link" href="#">Cookie settings</a></li>
+        </ul>
+      </nav>
       <p class="footer-policy-text">&copy;Green Harvest 2023</p>
     </div>
   </div>
